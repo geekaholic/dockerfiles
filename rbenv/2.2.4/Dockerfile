@@ -7,7 +7,6 @@ ENV RUBY_VERSION 2.2.4
 RUN . ~/.bashrc && rbenv install $RUBY_VERSION && rbenv global $RUBY_VERSION && \
     gem install --no-ri --no-rdoc bundler
 
-RUN mkdir /app
 WORKDIR /app
 
 CMD ["/bin/bash"]

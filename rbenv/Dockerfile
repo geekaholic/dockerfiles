@@ -1,6 +1,9 @@
 FROM debian:wheezy
 MAINTAINER Bud Siddhisena "bud@geekaholic.org"
 
+# Lets always use bash
+RUN ln -sf /bin/bash /bin/sh
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     git-core curl vim build-essential libssl-dev libcurl4-openssl-dev libreadline-dev \
