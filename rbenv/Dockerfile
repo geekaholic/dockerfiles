@@ -7,7 +7,7 @@ RUN ln -sf /bin/bash /bin/sh
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     git-core curl vim build-essential libssl-dev libcurl4-openssl-dev libreadline-dev \
-    libxml2-dev libxslt1-dev libpq-dev \
+    libxml2-dev libxslt1-dev libpq-dev postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
 # Setup rbenv
